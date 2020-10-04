@@ -42,4 +42,5 @@ jobs:
           cd cs
           dotnet restore
           dotnet build
+          cd ..
           .\.sonar\scanner\dotnet-sonarscanner end /d:sonar.login="${{ secrets.SONAR_TOKEN }}"
